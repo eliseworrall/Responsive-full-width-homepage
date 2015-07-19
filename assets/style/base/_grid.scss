@@ -1,0 +1,20 @@
+.row {
+  // Negative margin the row out to align the content of columns
+  display: block;
+  @extend .clearfix; // Clear the floated columns
+}
+
+.col {
+    width: 100%;
+    display: block;
+}
+
+@mixin make-column($columns) {
+    float: left;
+    width: percentage($columns / $grid-columns);
+    min-height: 1px; // Prevent columns from collapsing when empty
+}
+
+@for $i from 1 through $grid-columns {
+    .col-#{$i} {@include make-column($i);}
+}

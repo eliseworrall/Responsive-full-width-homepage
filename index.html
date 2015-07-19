@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Homepage demo</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/style/style.css">
+</head>
+<body>
+	<div class="container">
+
+		<!--MOBILE NAV/SEARCH START-->
+		<input tabindex="0" type="checkbox" id="nav-trigger" class="nav-trigger">
+		<label class="menulabel" for="nav-trigger">Menu<span></span></label>
+		<div class="mainnav-mobile" role="nav">
+			<ul class="nostyle">
+				<li><a href="">New in</a></li>
+				<li><a href="">Menu item 1</a></li>
+				<li><a href="">Menu item 2</a></li>
+				<li><a href="">Menu item 3</a></li>
+				<li><a href="">Menu item 4</a></li>
+				<li><a href="">Menu item 5</a></li>
+				<li><a href="">Menu item 6</a></li>
+				<li><a href="">Menu item 7</a></li>
+			</ul>
+        </div>
+        <input tabindex="0" type="checkbox" id="search-trigger" class="search-trigger">
+		<label class="searchlabel" for="search-trigger">Search</label>
+		<div class="search-mobile">
+			<form id="sitesearch-mobile">
+				<input class="sbtext" id="sbtext" type="text" value="Search" onfocus="if (this.value == 'Search') { this.value = ''}" onblur="this.value=!this.value?'Search':this.value;">
+				<button type="submit"><img class="sbbutton" id="sbbutton" src="assets/images/search-icon-white.png" width="25px" height="32px" alt=""></button>
+			</form> 
+		</div>
+		<!--MOBILE NAV/SEARCH END-->
+
+		<div class="site-wrap">
+			<header role="banner" class="row">
+				<div class="col-4-sm">
+					<form id="sitesearch">
+						<input class="sbtext" id="sbtext" type="text" value="Search" onfocus="if (this.value == 'Search') { this.value = ''}" onblur="this.value=!this.value?'Search':this.value;">
+						<button type="submit"><img class="sbbutton" id="sbbutton" src="assets/images/search-icon-small.png" width="22px" height="21px" alt=""></button>
+					</form> 
+				</div>
+				<div class="col-4-sm">
+					<h1><a href="http://www.glitterbombjewellery.co.uk"><img src="http://cdn.shopify.com/s/files/1/0727/4859/t/1/assets/logo.png?5932196424597023664"/></a></h1>
+				</div>
+				<div class="col-4-sm">
+					<ul role="navigation" class="nostyle accountnav">
+						<li><a href="">Cart (0)</a></li>
+						<li><a href="">Login</a> | <a href="">Register</a></li>
+					</ul>
+				</div>
+			</header>
+			<nav role="navigation" class="row">
+				<ul class="nostyle mainnav">
+					<li><a href="">New in</a></li>
+					<li><a href="">Menu item 1</a></li>
+					<li><a href="">Menu item 2</a></li>
+					<li><a href="">Menu item 3</a></li>
+					<li><a href="">Menu item 4</a></li>
+					<li><a href="">Menu item 5</a></li>
+					<li><a href="">Menu item 6</a></li>
+					<li><a href="">Menu item 7</a></li>
+				</ul>
+			</nav>
+			<main role="main">
+				<div class="homepage-row">
+					<div class="hero">
+						<img src="assets/images/hero.jpg" class="fullwidth" alt="" />
+						<div class="panel__inner">
+							<span class="panel__heading">The new Origami collection is inspired by...well...origami! Sleek lines and geometric shapes, including a stunning bird necklace made from a new tortoiseshell acrylic and an adorable origami bunny.</span>
+							<span class="panel__button">
+								<span class="panel__button__text" href="http://www.glitterbombjewellery.co.uk/blogs/blog/27713668-s-s-2015-origami-and-precious-minerals-collections">Read the blog &gt;</span>
+								<span class="panel__button__text" href="http://uk.monsoon.co.uk/uk/collections/rca-collection">Shop the collection &gt;</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 homepage-row">
+					<div class="col-6-md panel panel1">
+						<a href="">
+							<img src="assets/images/panel1.jpg" class="fullwidth" alt="Exclusive Design" />
+							<div class="panel__inner">
+								<!--<span class="panel__heading">Panel heading</span>-->
+								<span class="panel__button">
+									<span class="panel__button__text">Precious Minerals collection &gt;</span>
+								</span>
+							</div>
+						</a>
+					</div>
+					<div class="col-6-md panel panel2">
+						<a href="">
+							<img src="assets/images/panel2.jpg" class="fullwidth" alt="Beachwear" />
+							<div class="panel__inner">
+								<!--<span class="panel__heading">Panel heading</span>-->
+								<span class="panel__button">
+									<span class="panel__button__text">Shop clothing &gt;</span>
+								</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</main>
+			<footer role="contentinfo">
+				<!--Footer here-->
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
